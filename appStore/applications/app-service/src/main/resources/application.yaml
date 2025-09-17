@@ -1,0 +1,21 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: "appStore"
+  devtools:
+    add-properties: false
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+adapters:
+  r2dbc:
+    host: localhost
+    port: 5432
+    database: productos
+    schema: public
+    username: admin
+    password: admin
